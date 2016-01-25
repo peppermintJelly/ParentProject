@@ -1,0 +1,3 @@
+[submodule "SubProject1"]
+	path = SubProject1
+	url = https://github.com/peppermintJelly/SubProject1.git
