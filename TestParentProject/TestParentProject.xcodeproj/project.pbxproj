@@ -15,6 +15,16 @@
 		9BEDE4271C567E0A00E01482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDE4251C567E0A00E01482 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9BEDE4811C56A46400E01482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BEDE47D1C56A46400E01482 /* SubProject1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BEDE4621C56820300E01482;
+			remoteInfo = SubProject1;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9BEDE4141C567E0A00E01482 /* TestParentProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestParentProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEDE4181C567E0A00E01482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -26,6 +36,7 @@
 		9BEDE4231C567E0A00E01482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BEDE4261C567E0A00E01482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEDE4281C567E0A00E01482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEDE47D1C56A46400E01482 /* SubProject1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SubProject1.xcodeproj; path = ../SubProject1/SubProject1/SubProject1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 		9BEDE40B1C567E0A00E01482 = {
 			isa = PBXGroup;
 			children = (
+				9BEDE47D1C56A46400E01482 /* SubProject1.xcodeproj */,
 				9BEDE4161C567E0A00E01482 /* TestParentProject */,
 				9BEDE4151C567E0A00E01482 /* Products */,
 			);
@@ -77,6 +89,14 @@
 				9BEDE4181C567E0A00E01482 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BEDE47E1C56A46400E01482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BEDE4821C56A46400E01482 /* SubProject1.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,12 +144,28 @@
 			mainGroup = 9BEDE40B1C567E0A00E01482;
 			productRefGroup = 9BEDE4151C567E0A00E01482 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9BEDE47E1C56A46400E01482 /* Products */;
+					ProjectRef = 9BEDE47D1C56A46400E01482 /* SubProject1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9BEDE4131C567E0A00E01482 /* TestParentProject */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9BEDE4821C56A46400E01482 /* SubProject1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SubProject1.framework;
+			remoteRef = 9BEDE4811C56A46400E01482 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9BEDE4121C567E0A00E01482 /* Resources */ = {
@@ -300,6 +336,7 @@
 				9BEDE42D1C567E0A00E01482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
