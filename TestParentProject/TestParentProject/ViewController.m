@@ -17,8 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UILabel *myOrangeLabel = [[SubProject1_OrangeLabel alloc] initWithFrame:CGRectMake(10, 100, 400, 21)];
+    SubProject1_OrangeLabel *myOrangeLabel = [[SubProject1_OrangeLabel alloc] initWithFrame:CGRectMake(10, 100, 400, 21)];
     myOrangeLabel.text = @"This is a customlabel provided by SubProject1.framework";
+    [myOrangeLabel changeToGreenLabel];
     [self.view addSubview:myOrangeLabel];
     // Do any additional setup after loading the view, typically from a nib.
 }

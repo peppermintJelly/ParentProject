@@ -13,7 +13,8 @@
 		9BEDE4221C567E0A00E01482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDE4201C567E0A00E01482 /* Main.storyboard */; };
 		9BEDE4241C567E0A00E01482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDE4231C567E0A00E01482 /* Assets.xcassets */; };
 		9BEDE4271C567E0A00E01482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDE4251C567E0A00E01482 /* LaunchScreen.storyboard */; };
-		9BEDE4831C56A59200E01482 /* SubProject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEDE4821C56A46400E01482 /* SubProject1.framework */; };
+		9BEDE4961C56AF4800E01482 /* SubProject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEDE4821C56A46400E01482 /* SubProject1.framework */; };
+		9BEDE49B1C56B2CA00E01482 /* SubProject1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEDE4821C56A46400E01482 /* SubProject1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,14 +25,28 @@
 			remoteGlobalIDString = 9BEDE4621C56820300E01482;
 			remoteInfo = SubProject1;
 		};
-		9BEDE4881C56A5E400E01482 /* PBXContainerItemProxy */ = {
+		9BEDE4931C56AF0C00E01482 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9BEDE47D1C56A46400E01482 /* SubProject1.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BEDE4611C56820300E01482;
-			remoteInfo = SubProject1;
+			remoteGlobalIDString = 9BEDE48C1C56ABC000E01482;
+			remoteInfo = "SubProject1-Universal";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BEDE49A1C56AF4800E01482 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BEDE49B1C56B2CA00E01482 /* SubProject1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9BEDE4141C567E0A00E01482 /* TestParentProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestParentProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEDE4831C56A59200E01482 /* SubProject1.framework in Frameworks */,
+				9BEDE4961C56AF4800E01482 /* SubProject1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +133,12 @@
 				9BEDE4101C567E0A00E01482 /* Sources */,
 				9BEDE4111C567E0A00E01482 /* Frameworks */,
 				9BEDE4121C567E0A00E01482 /* Resources */,
+				9BEDE49A1C56AF4800E01482 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9BEDE4891C56A5E400E01482 /* PBXTargetDependency */,
+				9BEDE4941C56AF0C00E01482 /* PBXTargetDependency */,
 			);
 			name = TestParentProject;
 			productName = TestParentProject;
@@ -204,10 +220,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9BEDE4891C56A5E400E01482 /* PBXTargetDependency */ = {
+		9BEDE4941C56AF0C00E01482 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SubProject1;
-			targetProxy = 9BEDE4881C56A5E400E01482 /* PBXContainerItemProxy */;
+			name = "SubProject1-Universal";
+			targetProxy = 9BEDE4931C56AF0C00E01482 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
